@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2015-07-20T11:58:44+02:00
+
+====== Affichage correcte de la log ======
+* some text here
+- other text here
+{{{code: lang="java" linenumbers="True"
+             <doTry>
+                <to uri="tnd-absorption:closeItem"/>
+                <doCatch>
+                    <exception>com.systar.calcium.absorption.AbsorptionException</exception>
+                    <to uri="log:errorInCloseItemAbsorption?level=ERROR&amp;showAll=true"/>
+                </doCatch>
+            </doTry>
+}}}
